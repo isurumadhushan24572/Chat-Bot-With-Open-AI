@@ -50,9 +50,9 @@ If you encounter an error related to insufficient OpenAI API Key credits, ensure
 
 ---
 
-## GitHub Repository
-Find the complete source code here:
-🔗 [Chat-Bot-With-Open-AI](https://github.com/isurumadhushan24572/Chat-Bot-With-Open-AI)
+## Linkedin Profile
+
+🔗 [Linkedin Prifile](https://www.linkedin.com/in/isuru-madhushan-096878273/)
 
 ---
 
