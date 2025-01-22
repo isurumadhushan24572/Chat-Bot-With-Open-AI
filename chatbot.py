@@ -18,7 +18,7 @@ def init():       # Initialize the Streamlit app
 
     # Setup Streamlit page
     st.set_page_config(
-        page_title="Chat BOT With OpenAI",
+        page_title="Chat Bot With OpenAI",
         page_icon="🤖"
     )
 
@@ -35,7 +35,7 @@ def main():    # Main function
             SystemMessage(content="You are a helpful AI assistant.") # Initial system message for the message Schema
         ]
 
-    st.header("OPENAI Chatbot 🤖")
+    st.header("OpenAI Chatbot 🤖")
 
     # Sidebar with user input
     with st.sidebar:
