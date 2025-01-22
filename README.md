@@ -2,7 +2,7 @@
 
 This repository contains the code how to create a Chatbot using  Python, streamlit and LangChain.
 
-## Prerequisites
+## Steps Should Follow
 
 create Virtual env
 
@@ -18,39 +18,36 @@ creating .gitignore file , .env file and chatbot.py
 
   ```
   echo "# Files to ignore" > .gitignore && echo "OPENAI_API_KEY=your_api_key_here" > .env && echo "# Chatbot script" > chatbot.py
+  ```
+Insatalling Required dependencies
 
   ```
-
-  
-
-- Python 3.8 (or higher if streamlit-chat is updated)
-- Basic understanding of Python programming
-- Familiarity with Git and GitHub (optional but recommended)
-
-## Getting Started
-
-You will need to clone this repository and install the required dependencies.
-
-  ```
-  python -m venv chatbot-env
-
+  pip install -r requirements.txt
   ```
 
-To launch the application, you will need to run streamlit in the terminal:
+Save OpenAI API Key inside .env file
   ```
-  streamlit run main.py
+  OPENAI_API_KEY=your_openai_api_key
   ```
 
-## Contributing
+Run Chatbot.py file
 
-This repository is for educational purposes only and is not intended to receive further contributions for additional features.
-It is supposed to be used as support material for the YouTube tutorial that shows how to build the project. However, if you find an error in the code, feel free to open an issue or submit a pull request.
+  ```
+  streamlit run Chatbot.py
+  ```
+
+## Note
+
+* This is a very simple project of AI. 
+* Here when importing openai model I gave tempreature variable as 0.5
+* tempreature variable is used for change the radomness of the output(response)
+* Also here append all the chat history of the user input and chatbot output to get Quality response for the user input 
 
 
 ## Issues
 
-If you encounter any issues or have suggestions for improvements, please open an issue in the GitHub repository. We appreciate your feedback and will do our best to address any problems.
+some times you will get error due to the your OpenAI API Key Credit is equal to Zero.
+To solve this issue you need to add credit doing the payement
 
-## License
 
-This project is licensed under the [MIT License](LICENSE). Feel free to modify and distribute the code as per the terms of the license.
+
