@@ -1,4 +1,4 @@
-import streamlit as st                          # Develop GUI
+import streamlit as st                          # Create interactive web application
 from streamlit_chat import message              # Display the chat messages
 from dotenv import load_dotenv                  # Load the open API key from the environment variable
 import os                                       # Access the environment variable
@@ -6,10 +6,10 @@ from langchain.chat_models import ChatOpenAI    # Import the ChatOpenAI model
 from langchain.schema import SystemMessage, HumanMessage, AIMessage # Import the message schema
 
 
-def init():
+def init():       # Initialize the Streamlit app
 
-    # Load the OpenAI API key from the environment variable
-    load_dotenv()
+    
+    load_dotenv() # Load the OpenAI API key from the environment variable
 
     # Test that the API key exists
     if os.getenv("OPENAI_API_KEY") is None or os.getenv("OPENAI_API_KEY") == "":
@@ -35,11 +35,11 @@ def main():    # Main function
             SystemMessage(content="You are a helpful AI assistant.") # Initial system message for the message Schema
         ]
 
-    st.header("Your own ChatGPT 🤖")
+    st.header("OPENAI Chatbot 🤖")
 
     # Sidebar with user input
     with st.sidebar:
-        user_input = st.text_input("Your message:", key="user_input") # User input field
+        user_input = st.text_input("Enter Your Question:", key="user_input") # User input field
 
         # Handle user input
         if user_input:
@@ -60,4 +60,4 @@ def main():    # Main function
 
 
 if __name__ == '__main__':   # Run the main function
-    main()
+    main()                   # Call the main function
