@@ -36,18 +36,26 @@ Run Chatbot.py file
   streamlit run Chatbot.py
   ```
 
-## Note
+## Key Notes
+- This project is a simple implementation to get started with AI-powered chatbots.
+- The chatbot uses OpenAI’s model with a **temperature variable set to 0.5** for balanced responses.
+- Chat history (user inputs and chatbot responses) is maintained to provide better quality answers based on context.
 
-* This is a very simple project of AI. 
-* Here when importing openai model I gave tempreature variable as 0.5
-* tempreature variable is used for change the radomness of the output(response)
-* Also here append all the chat history of the user input and chatbot output to get Quality response for the user input 
+---
 
+## Troubleshooting
 
-## Issues
+### Common Issue: OpenAI API Key Credits
+If you encounter an error related to insufficient OpenAI API Key credits, ensure your key has enough credits by adding funds to your OpenAI account.
 
-some times you will get error due to the your OpenAI API Key Credit is equal to Zero.
-To solve this issue you need to add credit doing the payement
+---
 
+## GitHub Repository
+Find the complete source code here:
+🔗 [Chat-Bot-With-Open-AI](https://github.com/isurumadhushan24572/Chat-Bot-With-Open-AI)
 
+---
 
+Feel free to contribute or report any issues you encounter. Let's build smarter AI together!
+
+#AI #Chatbot #OpenAI #Streamlit #Python #LangChain
