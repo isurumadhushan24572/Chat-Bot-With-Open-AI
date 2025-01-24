@@ -52,7 +52,8 @@ If you encounter an error related to insufficient OpenAI API Key credits, ensure
 
 ## Linkedin Profile
 
-🔗 [Linkedin Prifile](https://www.linkedin.com/in/isuru-madhushan-096878273/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Isuru%20Madhushan-blue?logo=linkedin&style=for-the-badge)](https://www.linkedin.com/in/isuru-madhushan-096878273/)
+
 
 ---
 
