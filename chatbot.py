@@ -27,12 +27,14 @@ def main():    # Main function
     init()     # Initialize the Streamlit app
 
     # Initialize the ChatOpenAI model
-    chat = ChatOpenAI(temperature=0.5)  # Set the temperature to 0.5 for more diverse responses
+    chat = ChatOpenAI(
+        model = 'gpt-3.5-turbo',  # Use the GPT-3.5-turbo model
+        temperature=0.5)  # Set the temperature to 0.5 for more diverse responses
 
     # Initialize message history
     if "messages" not in st.session_state: 
         st.session_state.messages = [
-            SystemMessage(content="You are a helpful AI assistant.") # Initial system message for the message Schema
+            SystemMessage(content="You are a helpful AI assistant.Give the answer with simple english") # Initial system message for the message Schema
         ]
 
     st.header("OpenAI Chatbot 🤖")
