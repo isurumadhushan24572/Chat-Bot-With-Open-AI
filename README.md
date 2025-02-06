@@ -4,10 +4,7 @@ This repository contains the code how to create a Chatbot using  Python, streaml
 
 
 # Architecture
-
-![Chatbot Example](images/chatbot.png)
-
-
+![Architecture](Architecture/Simple%20chatbot%20Flow%20chart.png)
 ## Steps Should Follow
 
 create Virtual env
