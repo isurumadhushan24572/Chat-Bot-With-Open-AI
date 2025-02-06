@@ -2,6 +2,12 @@
 
 This repository contains the code how to create a Chatbot using  Python, streamlit, LangChain and LLM models with Open AI and Llama.
 
+
+# Architecture
+
+![Chatbot Example](images/chatbot.png)
+
+
 ## Steps Should Follow
 
 create Virtual env
