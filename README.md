@@ -48,6 +48,23 @@ Run Chatbot.py file
 ### Common Issue: OpenAI API Key Credits
 If you encounter an error related to insufficient OpenAI API Key credits, ensure your key has enough credits by adding funds to your OpenAI account.
 
+### Also If you don't have money use free open source llms like Llama, Mistral, etc...
+
+for that you can use Groq to acesss free LLMS. As an example:
+
+  ```
+  from langchain_groq import ChatGroq  
+
+  llm = ChatGroq(model="llama3-8b-8192",temperature = 0.5)
+  ```
+
+Also to access these free open source LLMS you need to generate GROQ_API_KEY
+
+Save GROQ_API_KEY inside .env file
+  ```
+  GROQ_API_KEY = your_GROQ_API_KEY
+  ```
+
 ---
 
 ## Linkedin Profile
