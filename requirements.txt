@@ -1,6 +1,9 @@
-openai==0.27.6
 streamlit==1.25.0
 python-dotenv==1.0.0
 requests==2.31.0
 streamlit_chat
 langchain
+langchain-openai
+virtualenv
+langchain-groq
+langchain-core
