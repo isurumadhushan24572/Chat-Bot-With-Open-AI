@@ -1,6 +1,6 @@
 # Chatbot with openai
 
-This repository contains the code how to create a Chatbot using  Python, streamlit and LangChain.
+This repository contains the code how to create a Chatbot using  Python, streamlit, LangChain and LLM models with Open AI and Llama.
 
 ## Steps Should Follow
 
