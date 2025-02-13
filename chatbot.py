@@ -4,6 +4,7 @@ from dotenv import load_dotenv                  # Load the open API key from the
 import os                                       # Access the environment variable
 from langchain.chat_models import ChatOpenAI    # Import the ChatOpenAI model
 from langchain.schema import SystemMessage, HumanMessage, AIMessage # Import the message schema
+from langchain_groq import ChatGroq             # Import Groq Chatmodels
 
 
 def init():       # Initialize the Streamlit app
@@ -12,8 +13,13 @@ def init():       # Initialize the Streamlit app
     load_dotenv() # Load the OpenAI API key from the environment variable
 
     # Test that the API key exists
-    if os.getenv("OPENAI_API_KEY") is None or os.getenv("OPENAI_API_KEY") == "":
-        st.error("OPENAI_API_KEY is not set. Please set it in your environment variables.")
+    # if os.getenv("OPENAI_API_KEY") is None or os.getenv("OPENAI_API_KEY") == "":
+    #     st.error("OPENAI_API_KEY is not set. Please set it in your environment variables.")
+    #     st.stop()  # Safely stop the Streamlit app
+    
+    # Test that the API key exists
+    if os.getenv("GROQ_API_KEY") is None or os.getenv("GROQ_API_KEY") == "":
+        st.error("GROQ_API_KEY is not set. Please set it in your environment variables.")
         st.stop()  # Safely stop the Streamlit app
 
     # Setup Streamlit page
@@ -27,10 +33,12 @@ def main():    # Main function
     init()     # Initialize the Streamlit app
 
     # Initialize the ChatOpenAI model
-    chat = ChatOpenAI(
-        model = 'gpt-3.5-turbo',  # Use the GPT-3.5-turbo model
-        temperature=0.5)  # Set the temperature to 0.5 for more diverse responses
+    # chat = ChatOpenAI(
+    #     model = 'gpt-3.5-turbo',  # Use the GPT-3.5-turbo model
+    #     temperature=0.5)  # Set the temperature to 0.5 for more diverse responses
 
+    chat = ChatGroq(model="llama3-8b-8192",
+                    temperature = 0.5)
     # Initialize message history
     if "messages" not in st.session_state: 
         st.session_state.messages = [

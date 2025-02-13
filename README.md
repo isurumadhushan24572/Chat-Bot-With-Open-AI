@@ -27,7 +27,8 @@ Insatalling Required dependencies
 
 Save OpenAI API Key inside .env file
   ```
-  OPENAI_API_KEY=your_openai_api_key
+  OPENAI_API_KEY=your_openai_api_key  
+  GROQ_API_KEY =your_Groq_api_key
   ```
 
 Run Chatbot.py file
@@ -38,7 +39,7 @@ Run Chatbot.py file
 
 ## Key Notes
 - This project is a simple implementation to get started with AI-powered chatbots.
-- The chatbot uses OpenAI’s model with a **temperature variable set to 0.5** for balanced responses.
+- The chatbot uses OpenAI’s model and Llama  with a **temperature variable set to 0.5** for balanced responses.
 - Chat history (user inputs and chatbot responses) is maintained to provide better quality answers based on context.
 
 ---
