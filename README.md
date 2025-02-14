@@ -80,4 +80,4 @@ Save GROQ_API_KEY inside .env file
 
 Feel free to contribute or report any issues you encounter. Let's build smarter AI together!
 
-#AI #Chatbot #OpenAI #Streamlit #Python #LangChain
+#AI #Chatbot #OpenAI #Streamlit #Python #LangChain #LangSmith
